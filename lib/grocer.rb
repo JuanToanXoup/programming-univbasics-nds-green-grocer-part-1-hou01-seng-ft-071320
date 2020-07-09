@@ -29,13 +29,13 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 full_cart = []
   cart.each do |index|
-    if !final_array[index]
-      final_array[index] = []
-      final_array[index][:count] = 1
+    if !full_cart[index]
+      full_cart[index] = []
+      full_cart[index][:count] = 1
       binding.pry
     end
-    if final_array[index]
-      final_array[index][:count] += 1
+    if full_cart[index]
+      full_cart[index][:count] += 1
     end
   end
   full_cart
