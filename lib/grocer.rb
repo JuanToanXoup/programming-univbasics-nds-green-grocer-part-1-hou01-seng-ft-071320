@@ -28,7 +28,6 @@ def consolidate_cart(cart)
     if !cart_array.include?(index)
       cart_array << index
       binding.pry
-    end
     if cart_array.include?(index)
       index[:count] +=
     end
