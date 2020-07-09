@@ -21,12 +21,17 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  cart.each_with_object([]) do |index, final_array|
+    full_cart = cart.each_with_object([]) do |index, final_array|
     if !final_array[index]
       final_array[index] = []
+      final_array[index][:count] = 1
+      binding.pry
+    end
+    if final_array[index]
+      final_array[index][:count] += 1
     end
   end
-  final_array
+  full_cart
   binding.pry
 end
 binding.pry
