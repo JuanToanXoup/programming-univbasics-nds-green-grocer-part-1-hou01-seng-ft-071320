@@ -27,8 +27,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-full_cart = []
-  cart.each do |index|
+  full cart = cart.each_with_object do |index,cart_array|
       binding.pry
   end
   full_cart
