@@ -41,4 +41,4 @@ full_cart = []
   full_cart
   #binding.pry
 end
-#binding.pry
+binding.pry
