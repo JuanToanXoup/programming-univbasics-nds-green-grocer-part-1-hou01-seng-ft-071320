@@ -27,6 +27,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+full_cart = []
     cart.each do |index|
     if !final_array[index]
       final_array[index] = []
