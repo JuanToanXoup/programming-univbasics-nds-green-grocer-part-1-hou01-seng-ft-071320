@@ -25,7 +25,7 @@ unconsolidated_cart = [
 def consolidate_cart(cart)
 full_cart = []
   cart.each do |index|
-    full_cart << index
+    full_cart << index.store(:count,1)
     binding.pry
   end
   full_cart
