@@ -23,10 +23,13 @@ unconsolidated_cart = [
 ]
 
 def consolidate_cart(cart)
-  full_cart = cart.each_with_object([]) do |index,cart_array|
+  cart_with_count = cart.each_with_object([]) do |index,cart_array|
+    index[:count] = 1
+    cart_array << index
+  end
+  full_cart = cart_with_count.each_with_object([]) do |index2,final_cart|
     if !cart_array.include?(index)
-      index[:count] = 1
-      cart_array << index
+      final_cart << index
     else
       index[:count] += 1
     end
