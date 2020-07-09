@@ -23,7 +23,7 @@ unconsolidated_cart = [
 ]
 
 def consolidate_cart(cart)
-full_cart = cart.each_with_object do |index,cart_array|
+full_cart = cart.each_with_object([]) do |index,cart_array|
     binding.pry
   end
   full_cart
