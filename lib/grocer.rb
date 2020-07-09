@@ -24,7 +24,8 @@ unconsolidated_cart = [
 
 def consolidate_cart(cart)
   full_cart = cart.each_with_object([]) do |index,cart_array|
-    if cart_array.include?(index)
+    if !cart_array.include?(index)
+      cart_array << index
       binding.pry
     end
   end
