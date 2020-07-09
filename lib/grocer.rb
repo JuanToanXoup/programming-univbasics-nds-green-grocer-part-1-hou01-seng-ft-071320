@@ -28,7 +28,7 @@ def consolidate_cart(cart)
     cart_array << index
   end
   full_cart = cart_with_count.each_with_object([]) do |index2,final_cart|
-    if !cart_array.include?(index)
+    if !final_cart.include?(index)
       final_cart << index
     else
       index[:count] += 1
