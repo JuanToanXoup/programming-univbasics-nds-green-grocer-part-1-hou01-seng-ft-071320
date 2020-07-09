@@ -32,10 +32,7 @@ def consolidate_cart(cart)
       final_cart << index2
     else
       index2[:count] = index2[:count] + 1
-      binding.pry
     end
   end
   full_cart
-  binding.pry
 end
-binding.pry
