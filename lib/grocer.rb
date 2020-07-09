@@ -30,7 +30,7 @@ def consolidate_cart(cart)
 full_cart = []
   cart.each do |index|
     if !full_cart[index]
-      full_cart[index] = []
+      full_cart << index
       full_cart[index][:count] = 1
       #binding.pry
     end
