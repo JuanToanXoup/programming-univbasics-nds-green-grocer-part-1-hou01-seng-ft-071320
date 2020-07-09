@@ -16,6 +16,12 @@ def find_item_by_name_in_collection(name, collection)
   #binding.pry
 end
 
+unconsolidated_cart = [
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "KALE", :price => 3.00, :clearance => false}
+]
+
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
