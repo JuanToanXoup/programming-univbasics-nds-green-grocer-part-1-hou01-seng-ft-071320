@@ -32,13 +32,13 @@ full_cart = []
     if !full_cart[index]
       full_cart[index] = []
       full_cart[index][:count] = 1
-      binding.pry
+      #binding.pry
     end
     if full_cart[index]
       full_cart[index][:count] += 1
     end
   end
   full_cart
-  binding.pry
+  #binding.pry
 end
-binding.pry
+#binding.pry
