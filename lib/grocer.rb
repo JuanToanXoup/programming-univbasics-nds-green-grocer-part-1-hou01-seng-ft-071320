@@ -33,4 +33,4 @@ def consolidate_cart(cart)
   full_cart
   #binding.pry
 end
-#binding.pry
+binding.pry
