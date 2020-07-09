@@ -31,6 +31,5 @@ def consolidate_cart(cart)
       index[:count] +=
     end
   end
-  full_cart
 end
 binding.pry
