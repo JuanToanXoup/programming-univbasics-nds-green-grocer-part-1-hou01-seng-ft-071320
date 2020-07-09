@@ -23,17 +23,10 @@ unconsolidated_cart = [
 ]
 
 def consolidate_cart(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This returns a new Array that represents the cart. Don't merely
-  # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 full_cart = []
   cart.each do |index|
     full_cart << index
-      binding.pry
-    end
   end
   full_cart
-  #binding.pry
 end
 binding.pry
