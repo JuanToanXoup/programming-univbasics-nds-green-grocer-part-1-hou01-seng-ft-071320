@@ -29,6 +29,9 @@ def consolidate_cart(cart)
       cart_array << index
       binding.pry
     end
+    if cart_array.include?(index)
+      index[:count] +=
+    end
   end
   full_cart
 end
