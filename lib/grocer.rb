@@ -31,7 +31,7 @@ def consolidate_cart(cart)
     if !final_cart.include?(index2)
       final_cart << index2
     else
-      index2[:count] += 1
+      index2[:count] = index2[:count] + 1
     end
   end
   full_cart
